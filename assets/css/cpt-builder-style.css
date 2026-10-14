@@ -1,0 +1,227 @@
+
+.cpt-builder-post-details {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+    color: #374151;
+    font-family: inherit;
+    line-height: 1.7;
+    box-sizing: border-box;
+}
+
+.cpt-builder-post-details *,
+.cpt-builder-post-details *::before,
+.cpt-builder-post-details *::after {
+    box-sizing: border-box;
+}
+
+/* Post information */
+
+.cpt-builder-post-details>p {
+    margin: 0 0 12px;
+    padding: 10px 14px;
+    background: #f9fafb;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+.cpt-builder-post-details>p strong {
+    color: #111827;
+    margin-right: 5px;
+}
+
+/* Section headings */
+
+.cpt-builder-post-details h2 {
+    margin: 30px 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e5e7eb;
+    color: #111827;
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+/* Post content */
+
+.cpt-builder-post-details .cpt-post-content {
+    margin-bottom: 25px;
+    overflow-wrap: anywhere;
+    color: #4b5563;
+}
+
+.cpt-builder-post-details .cpt-post-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cpt-builder-post-details .cpt-post-content iframe {
+    max-width: 100%;
+}
+
+/* ========================================
+   Custom Fields Section
+======================================== */
+
+.cpt-builder-custom-field {
+    margin-bottom: 22px !important;
+    padding: 18px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.cpt-builder-custom-field:focus-within {
+    border-color: #2563eb;
+}
+
+/* Labels */
+
+.cpt-builder-custom-field>label {
+    display: block;
+    margin-bottom: 8px !important;
+    color: #111827;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.cpt-builder-custom-field>label span {
+    color: #dc2626;
+}
+
+/* Text inputs, select and textarea */
+
+.cpt-builder-custom-field input:not([type="checkbox"]):not([type="radio"]):not([type="color"]),
+.cpt-builder-custom-field select,
+.cpt-builder-custom-field textarea {
+    display: block;
+    width: 100% !important;
+    max-width: 100%;
+    min-height: 44px;
+    margin: 0;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #111827;
+    font: inherit;
+    font-size: 15px;
+    line-height: 1.5;
+    box-shadow: none;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Textarea */
+
+.cpt-builder-custom-field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Focus */
+
+.cpt-builder-custom-field input:focus,
+.cpt-builder-custom-field select:focus,
+.cpt-builder-custom-field textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Placeholder */
+
+.cpt-builder-custom-field input::placeholder,
+.cpt-builder-custom-field textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* Select dropdown */
+
+.cpt-builder-custom-field select {
+    cursor: pointer;
+}
+
+/* Checkbox options */
+
+.cpt-builder-custom-field label:has(input[type="checkbox"]),
+.cpt-builder-custom-field label:has(input[type="radio"]) {
+    display: flex !important;
+    align-items: center;
+    gap: 9px;
+    margin: 8px 0 !important;
+    padding: 9px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #374151;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.cpt-builder-custom-field input[type="checkbox"],
+.cpt-builder-custom-field input[type="radio"] {
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    flex-shrink: 0;
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+/* Color picker */
+
+.cpt-builder-custom-field input[type="color"] {
+    display: block;
+    width: 70px;
+    height: 44px;
+    padding: 4px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* Autosave status */
+
+.cpt-builder-custom-field .cpt-field-save-status {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* ========================================
+   Mobile Responsive
+======================================== */
+
+@media (max-width: 600px) {
+    .cpt-builder-post-details {
+        margin: 15px auto;
+        padding: 18px;
+        border-radius: 8px;
+    }
+
+    .cpt-builder-post-details h2 {
+        margin-top: 24px;
+        font-size: 21px;
+    }
+
+    .cpt-builder-custom-field {
+        padding: 14px;
+        margin-bottom: 16px !important;
+    }
+
+    .cpt-builder-custom-field input,
+    .cpt-builder-custom-field select,
+    .cpt-builder-custom-field textarea {
+        font-size: 16px;
+    }
+}
+
